@@ -1,0 +1,11 @@
+THRUSTLINE
+
+The game engine, renderer, interface and game art are original project work.
+It distributes no third-party gameplay code, shaders, models, textures, fonts,
+or audio files.
+
+The bundled AlterU bridge is the canonical first-party platform runtime from
+/Users/yin/code/games/shared/runtime/bridge.ts.
+
+The poster was generated through the first-party Aigram transit image service
+on 2026-07-31 and contains no separately licensed source asset.

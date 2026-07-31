@@ -1,0 +1,16 @@
+{
+  "name": "thrustline",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "verify": "node scripts/verify-engine.mjs",
+    "verify:static": "node scripts/verify-static.mjs",
+    "verify:policies": "node scripts/search-policies.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.4.3"
+  }
+}
