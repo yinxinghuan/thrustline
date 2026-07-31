@@ -73,3 +73,6 @@ Canvas 内部坐标始终为 `360×640`，DOM HUD 在 `390×844` 与 `320×568` 
 - `public/media/` 含 3 张 1280×720 JPEG；总计约 444KB。默认只加载 safe，其他档位浏览器按需读取；失败时仍保留结果标题、原因和真实遥测。
 - `.crt-terminal / .crt-optics / .crt-vsync` 组成物理机体、CSS 像素定标扫描调制、暗角/孔径与一次同步层。所有光学层 `pointer-events:none`；reduced-motion 移除同步动画。
 - 旧 `renderer.drawFieldReturn()` 留作改造前证据与测试参考，但用户可见结果不再调用；`evidenceRenderCount` 现在表示媒体选档次数。
+## 2026-08-01 结果显示层
+
+结果层由 CSS Grid 将摄像媒体设为唯一弹性区域；`object-fit: cover` 只影响预置媒体裁切，不改动终局数据或物理。CRT 光学层由多重线性/径向背景和玻璃内阴影构成，位于输入层之下且 `pointer-events: none`。
