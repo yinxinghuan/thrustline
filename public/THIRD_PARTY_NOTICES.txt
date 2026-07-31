@@ -1,11 +1,3 @@
-THRUSTLINE
+THRUSTLINE uses no third-party code, models, textures, fonts, audio, or other licensed assets.
 
-The game engine, renderer, interface and game art are original project work.
-It distributes no third-party gameplay code, shaders, models, textures, fonts,
-or audio files.
-
-The bundled AlterU bridge is the canonical first-party platform runtime from
-/Users/yin/code/games/shared/runtime/bridge.ts.
-
-The poster was generated through the first-party Aigram transit image service
-on 2026-07-31 and contains no separately licensed source asset.
+The three local result-camera JPEGs were generated for this project with OpenAI's built-in image generation workflow on 2026-07-31. Prompts, source PNGs, output mapping, and modifications are recorded in doc/assets.md. They contain no imported third-party artwork.

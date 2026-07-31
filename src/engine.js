@@ -18,11 +18,13 @@ const TERRAIN = Object.freeze([
 
 const MAX_ANGLE = 34 * Math.PI / 180;
 const ANGLE_SPEED = 0.97;
-const ANGLE_PHASE = -1.57;
+const ANGLE_PHASE = Math.PI + Math.asin(6 / 34);
 const GRAVITY = 38;
 const THRUST = 78;
 const FUEL_BURN = 18;
 const WIND_ACCEL = 24;
+
+export const SPAWN = Object.freeze({ x: 160, y: 160, vx: 4, vy: 4 });
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
@@ -132,10 +134,10 @@ export class ThrustlineEngine {
     this.accumulator = 0;
     this.elapsed = 0;
     this.thrusting = false;
-    this.x = 64;
-    this.y = 92;
-    this.vx = 18;
-    this.vy = 5;
+    this.x = SPAWN.x;
+    this.y = SPAWN.y;
+    this.vx = SPAWN.vx;
+    this.vy = SPAWN.vy;
     this.angle = angleAt(0);
     this.fuel = 100;
     this.score = 0;
